@@ -1,5 +1,4 @@
 #!/bin/bash
-VERSION=$1
 
-./build_runtime.sh $VERSION
+./build_runtime.sh $1
 aws s3 cp runtime.zip s3://hydra.frontierview.com/
